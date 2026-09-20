@@ -275,7 +275,7 @@ with tab_mon:
     with m1:
         st.metric("Total Videos in Queue", f"{len(st.session_state.queue_data)} Videos", "+1 Generated")
     with m2:
-        st.metric("Active Niche", current_niche.split())
+        st.metric("Active Niche", current_niche)
     with m3:
         st.metric("Average Watch Length", st.session_state.active_package["duration_min"], "Mid-Rolls Enabled")
     with m4:
