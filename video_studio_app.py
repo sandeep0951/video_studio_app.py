@@ -302,7 +302,7 @@ with tab_gen:
     st.subheader("🚀 1-Click Autonomous Video Generator")
     st.write(f"Generate an end-to-end video package for **{current_niche}**:")
     
-    col_t1, col_t2 = st.columns()
+    col_t1, col_t2 = st.columns(2)
     with col_t1:
         preset_list = TOPIC_TEMPLATES[current_niche]["presets"] + ["✍️ Custom Problem/Topic (Neeche likhein)"]
         chosen_preset = st.selectbox("Select High-Intent Trend Angle", preset_list)
