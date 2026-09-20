@@ -338,7 +338,7 @@ with tab_long:
     pkg = st.session_state.active_package
     st.markdown(f"**Current Working Topic:** `{pkg['topic']}` | **Duration:** `{pkg['duration_min']}` | **Word Count:** `{pkg['word_count']}`")
 
-    col_script, col_media = st.columns()
+    col_script, col_media = st.columns(2)
     with col_script:
         st.markdown("#### 📜 Spoken Hindi Narration Timeline")
         full_script_text = ""
